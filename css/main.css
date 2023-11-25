@@ -1,0 +1,373 @@
+#home{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+:root{
+    --secndary-color:#f7f7f7;
+    --section-padding:80px 0;
+}
+#about .container{
+    padding: 80px 0 !important;
+}
+#home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+   bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0,0, 0.6);
+    z-index: 1;
+}
+*{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: Montserrat sans-serif;
+}
+a{
+    color: white;
+}
+h1{
+    font-size: 40px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+.x{
+    width: 80px;
+    height: 80px;
+}
+.move h2{
+    font-size: 60px;
+    position: relative;
+}
+.move h2::after{
+    content: "|";
+    width: 4px;
+    height: 100%;
+    color: white;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transition: move , 4s;
+
+}
+@keyframes move {
+    0% {
+        content: "|"
+    }
+
+    5% {
+        content: "De|"
+    }
+
+    10% {
+        content: "Des|"
+    }
+
+    15% {
+        content: "Desi|"
+    }
+
+    20% {
+        content: "Desig|"
+    }
+
+    25% {
+        content: "Design|"
+    }
+
+    30% {
+        content: "Designe|"
+    }
+
+    35% {
+        content: "Designer|"
+    }
+
+    40% {
+        content: "Desig|"
+    }
+
+    45% {
+        content: "|"
+    }
+
+    50% {
+        content: "Dev|"
+    }
+
+    55% {
+        content: "Devo|"
+    }
+
+    60% {
+        content: "Devol|"
+    }
+
+    65% {
+        content: "devolper|"
+    }
+
+    70% {
+        content: "l|"
+    }
+
+    75% {
+        content: "la|"
+    }
+
+    80% {
+        content: "lar|"
+    }
+
+    85% {
+        content: "Lary gr|"
+    }
+
+    90% {
+        content: "Lary gra|"
+    }
+
+    95% {
+        content: "Lary gray|"
+    }
+
+    100% {
+        content: "|"
+    }
+
+ 
+}
+
+.main-title h3{
+    font-weight: bolder;
+    font-size: 50px;
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    z-index: 4;
+}
+.main-title h2{
+    font-weight: bolder;
+        font-size: 50px;
+        position: relative;
+    
+}
+.main-title h3::after,
+.main-title h2::after{
+    content: ".";
+    position: absolute;
+    bottom: 0;
+}
+.main-title h3::before{
+    content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(../images/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+      
+      
+}
+.main-title span{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: grey;
+}
+#about .container .skills .barx .over1::after,
+#about .container .skills .barx .over2::after,
+#about .container .skills .barx .over3::after{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+#about .container .skills .barx .over1::after{
+    content: "95%";
+}
+
+#about .container .skills .barx .over2::after{
+    content: "80%";
+}
+#about .container .skills .barx .over3::after{
+    content: "90%";
+}
+#about .container .img::before{
+    background-image: url(../images/dots.png);
+    content: "";
+        position: absolute;
+        width: 100%;
+        height: 89%;
+        z-index: -1;
+        left: -15px;
+        top: 90px;
+}
+#about .container .buttons button.cv:hover{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black;
+
+}
+#services{
+    background-color: var(--secndary-color);
+    padding: var(--section-padding);
+}
+#services .container .x{
+    background-color: #f7f7f7;
+}
+#services .container .card{
+    transition: all 0.6;
+}
+.x{
+    transition: 0.6s;
+}
+#services .container .card:hover .x{
+   background-color: black;
+   color: white ;
+}
+#portofolio .container .item{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(400px);
+    transition: 0.8s;
+}
+#portofolio .container .x{
+    width: 25px;
+    height: 25px;
+}
+#portofolio .container .item h3{
+    transform: translateY(-30px);
+    transition: 0.4s;
+    transition-delay: 0.3s;
+}
+#portofolio .container .item .icons{
+    transform: translateY(30px);
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+#portofolio .container .img:hover .item {
+    transform: translateY(0);
+}
+#portofolio .container .img:hover .item h3,
+#portofolio .container .img:hover .icons{
+    transform: translateY(0);
+}
+
+.carousel-indicators [data-bs-target],
+.carousel-indicators2 [data-bs-target]{
+text-indent: 0;
+border: none;
+font-weight: bold;
+text-transform: capitalize;
+background-color: transparent;
+}
+.carousel-indicators [data-bs-target]{
+width: 80px;
+    height: 40px;
+}
+.carousel-indicators2 [data-bs-target]{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color:#343434 ;
+    opacity: 0.8;
+}
+
+#opnion{
+    background-color: var(--secndary-color);
+}
+#opnion .container .text p{
+    font-size: 15px;
+}
+#team{
+    background-color: var(--secndary-color);
+    
+}
+#team .container .item .over{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+    transform: scale(0);
+}
+#team .container .item  img{
+    transition: 0.2s;
+}
+#team .container .item:hover .over{
+    transform: scale(1) rotatey(180deg);
+}
+#team .container .item .card-footer{
+   background-color: rgba(52, 52, 52, .8);
+}
+#team .container .item .over .icon {
+    background-color: black;
+    color: white;
+    margin-right: 3px;
+    transition: 0.3s;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+#team .container .item .over .icon:hover{
+    background-color: white;
+    color: black;
+}
+#contact .container .item .icon{
+    background-color: #eee;
+    color: black;
+    transition: 0.4s;
+}
+#contact .container .item:hover .icon{
+    color: white;
+    background-color: black;
+}
+#contact .container form input{
+    outline: none ;
+    border: none ;
+    background-color: var(--secndary-color);
+}
+#contact .container form button{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    font-size: 15px;
+}
+#contact .container form button:hover{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color:#1c1c1c;
+    color: #748182;
+    padding: 30px;
+}
